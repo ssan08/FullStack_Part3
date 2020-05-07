@@ -2,6 +2,9 @@
   "name": "Fullstack_Part3",
   "version": "1.0.0",
   "description": "backend",
+    "engines": {
+    "node": "12.x"
+  },
   "main": "index.js",
   "directories": {
     "example": "example"
