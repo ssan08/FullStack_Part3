@@ -15,6 +15,10 @@
   "devDependencies": {
     "nodemon": "^2.0.3"
   },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/ssan08/FullStack_Part3"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
