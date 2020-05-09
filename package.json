@@ -6,9 +6,7 @@
     "node": "12.x"
   },
   "main": "index.js",
-  "directories": {
-    "example": "example"
-  },
+ 
   "dependencies": {
     "axios": "^0.19.2",
     "cors": "^2.8.5",
