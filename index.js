@@ -98,6 +98,26 @@ app.post('/api/persons', (request, response) => {
   response.json(person)
 })
 
+app.put('/api/persons/:id', (request, response) => {
+  const id = Number(request.params.id)
+  const  body = request.body
+  const person = {
+    name: body.name,
+    number: body.number,
+    id: id,
+  }
+  for (let index = 0; index < persons.length; index++) {
+    const element = persons[index].id;
+    if (element == id)
+    {
+      persons[index].number = person.number
+    }
+    
+  }
+  response.json(person)
+
+})
+
 app.delete('/api/persons/:id', (request, response) => {
   const id = Number(request.params.id)
   persons = persons.filter(person => person.id !== id)
